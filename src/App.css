@@ -36,3 +36,134 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.chat-room {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #128c7e;
+}
+
+input[type='text'] {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.message-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-input textarea {
+  width: 85%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.message-input button {
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.message-input button:hover {
+  background-color: #128c7e;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message .message-bubble {
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  background-color: #e1ffc7;
+  margin: 5px;
+}
+
+.message .other-message .message-bubble {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+}
+
+.message .my-message .message-bubble {
+  background-color: #25d366;
+  color: white;
+  align-self: flex-end;
+}
+
+.nickname {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.typing {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+}
