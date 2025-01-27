@@ -7,7 +7,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
-    "teleparty-websocket-lib": "git+ssh://git@github.com:watchparty-org/teleparty-websocket-lib.git",
+    "teleparty-websocket-lib": "https://github.com/watchparty-org/teleparty-websocket-lib.git",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
